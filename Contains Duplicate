@@ -1,0 +1,21 @@
+Q)Given an integer array nums, return true if any value appears more than once in the array, otherwise return false
+sol) Explanation:
+-Basically, the program is about the returning True if the same elements are present in the array otherwise return false
+-Firstly we have taken the object nums 
+-started the loop i for iterating through all elements in the array and inner loop j to see if any of them are equal to nums[i]
+-after thet we performing the comparision the loop checks that any elements are same(or) repeated if present return True or else return False
+``java
+class Solution {
+    public boolean hasDuplicate(int[] nums) 
+    {
+        for(int i=0;i<nums.length;i++){
+            for(int j=i+1;j<nums.length;j++){
+                if(nums[i]==nums[j]){
+                 return true;
+            }
+        }
+ 
+    }
+    return false;
+}
+}
